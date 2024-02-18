@@ -1,4 +1,4 @@
-# filmpicker
+# Filmpicker
 A website for generating movie recommendations based on your favorite film!
 
 This application requires a virtual environment with a number of auxiliary packages that are not included in the Python Standard Library. 

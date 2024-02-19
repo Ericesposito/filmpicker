@@ -1,5 +1,5 @@
-# Filmpicker
-A website for generating movie recommendations based on your favorite film!
+# Filmpicker Backend Server
+The backend server for FilmPicker, a website for generating movie recommendations based on your favorite film!
 
 This application requires a virtual environment with a number of auxiliary packages that are not included in the Python Standard Library. 
 - The dependencies for this application are bundled up in the .yml file, environment.yml

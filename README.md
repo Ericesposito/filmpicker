@@ -16,3 +16,5 @@ To reproduce the environment on another machine or for another user, follow thes
    conda activate filmpicker_env
 
 Now, the environment has been reproduced with all dependencies installed.
+
+Download

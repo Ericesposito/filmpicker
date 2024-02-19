@@ -14,9 +14,7 @@ venv/
 .env
 
 # Data directories
-data_analysis/data/raw/
 data_analysis/data/processed/
-data_analysis/data/final/
 
 # Development tools
 .idea/

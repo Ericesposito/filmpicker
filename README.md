@@ -2,19 +2,25 @@
 
 The backend server for FilmPicker, a website for generating movie recommendations based on your favorite film!
 
-This application requires a virtual environment with a number of auxiliary packages that are not included in the Python Standard Library.
+This application requires a virtual environment with a number of auxiliary packages that are not included in the Python Standard Library. To simplify this, the latest docker image can be pulled directly from my dockerhub by running command:
 
-- The dependencies for this application are bundled up in the .yml file, environment.yml
+- docker pull ericesposito/filmpicker-flask-api
+- NOTE: Docker is required to be installed on your computer to follow these steps
 
-To reproduce the environment on another machine or for another user, follow these steps:
+Now, you can simply spin up a container based on this image, creating a local server that should be accessible on your device via port 8080 (e.g. localhost:8080)
 
-1. Install Conda (either Anaconda or Miniconda) on the target machine.
-2. Clone this repository, which should include the environment.yml file.
-3. Open a terminal, navigate to your project directory, and create a new Conda environment using the environment.yml file:
-   conda env create -f environment.yml
-4. Activate the environment by running this command:
-   conda activate filmpicker_env
+- To easily spin up a container, run this command to make it accessible on port 8080 locally:
+- docker run -p 8080:80 filmpicker-flask-api
 
-Now, the environment has been reproduced with all dependencies installed.
+- You can test backend functionality via Postman with the following options:
+  - Send a POST request to localhost:8080
+  - Attach a raw JSON shaped as follows:
+    {"favorite_movie": "Blue Velvet (1986)"}
+    - Note that you need to follow the proper convention with the correct spelling followed by its release year in parenthese
 
-Download
+OR
+
+- You can test backend functionality via running this command in your terminal, with the server up and running:
+- curl -X POST http://localhost:8080/recommendations -H 'Content-Type: application/json' -d '{"favorite_movie":"Blue Velvet (1986)"}'
+
+Using either of these methods, you should receive a response consisting of a JSON with an array of movie recommendations

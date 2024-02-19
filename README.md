@@ -54,6 +54,8 @@ And now, with the dataframe generated locally, you will be able to run the provi
 
 ===
 
+## TESTING OUT YOUR BACKEND SERVER
+
 Now, your server is up and running, and you can test it out by sending a request!
 
 You can test backend functionality via Postman with the following steps:
@@ -72,4 +74,4 @@ You can also test backend functionality via running this command in your termina
 
 Using either of these methods, you should receive a response consisting of a JSON with an array of movie recommendations
 
-Feel free to experiment and build a beautiful Front End that can run based off of this backend server!
+Feel free to experiment and build a beautiful Front End that can run based off of the responses sent from this backend server!

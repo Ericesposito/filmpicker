@@ -15,7 +15,7 @@ Pull the most recent Docker Image from my dockerhub
 
 Now, you can simply spin up a container based on this image, creating a local server that should be accessible on your device via port 8080 (e.g. localhost:8080). To spin up a container, run this command to make it accessible on port 8080 locally:
 
-- docker run -p 8080:80 filmpicker-flask-api
+- docker run --rm -p 8080:80 filmpicker-flask-api
 
 If following these directions via Docker, you can skip down to the === section below
 

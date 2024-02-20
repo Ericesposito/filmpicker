@@ -13,6 +13,11 @@ app = Flask(__name__)
 CORS(app)
 
 
+@app.route("/", methods=["GET"])
+def hello_world():
+    return jsonify(message="Hello from root")
+
+
 # Declare a /recommendations endpoint, allowing for POST requests
 @app.route("/recommendations", methods=["POST"])
 def make_recommendations():
